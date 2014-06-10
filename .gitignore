@@ -1,3 +1,4 @@
+
 # User specific & automatically generated files #
 #################################################
 /app/Config/database.php
@@ -19,3 +20,9 @@
 Icon?
 ehthumbs.db
 Thumbs.db
+=======
+tmp/*
+[Cc]onfig/core.php
+[Cc]onfig/database.php
+app/tmp/*
+app/[Cc]onfig/core.php
