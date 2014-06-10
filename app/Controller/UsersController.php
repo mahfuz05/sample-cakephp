@@ -1,6 +1,13 @@
 <?php
 class UsersController extends AppController {
 
+	public $helpers = array(
+        
+        'Html' => array('className' => 'TwitterBootstrap.BootstrapHtml'),
+        'Form' => array('className' => 'TwitterBootstrap.BootstrapForm'),
+        'Paginator' => array('className' => 'TwitterBootstrap.BootstrapPaginator'),
+    );
+
     public function beforeFilter() {
         parent::beforeFilter();
         $this->Auth->allow('add', 'logout');

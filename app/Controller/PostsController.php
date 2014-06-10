@@ -1,7 +1,14 @@
 <?php
 class PostsController extends AppController {
 
-	 public $helpers = array('Html', 'Form','Session');
+	 
+	 public $helpers = array(
+        'Session',
+        'Html' => array('className' => 'TwitterBootstrap.BootstrapHtml'),
+        'Form' => array('className' => 'TwitterBootstrap.BootstrapForm'),
+        'Paginator' => array('className' => 'TwitterBootstrap.BootstrapPaginator'),
+    );
+	 
 	 public $components = array('Session');
 
 	 public function index() {

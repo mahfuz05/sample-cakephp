@@ -35,6 +35,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
+		echo $this->Html->css('bootstrap'); 
+        echo $this->Html->css('bootstrap-responsive');
+        echo $this->Html->script('bootstrap');
 	?>
 </head>
 <body>

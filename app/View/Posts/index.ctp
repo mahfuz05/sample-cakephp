@@ -5,7 +5,7 @@
     'Add Post',
     array('controller' => 'posts', 'action' => 'add')
 ); ?>
-<table>
+<table class="table table-bordered">
     <tr>
         <th>Id</th>
         <th>Title</th>
